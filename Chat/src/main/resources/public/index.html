@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang = "pl">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>WebsSockets</title>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+
+</head>
+<body>
+
+
+    <div id="getName" >
+    What is your name?<br>
+        <input id="enterWindow">
+    </div>
+
+
+
+    <div id="canals" style = "display: none;">
+        <div><button id="newCanal" align = "left">Create new canal</button></div>
+        <br>
+        <div align = "left">Canal list: <br></div>
+        <p>
+        <div><button id="chooseChatbot" align = "left">chatbot</button><br></div>
+        <div id="canalList" align = "left"> <!-- Built by JS --> </div>
+        </p>
+    </div>
+
+
+    <div id="canal" style = "display: none;">
+        <div id="canalNumber"></div><br>
+        <div id="chatControls">
+            <input id="message" placeholder="Type your message">
+            <button id="send" align = "right">Send</button>
+        </div>
+        <ul id="userlist"> <!-- Built by JS --> </ul>
+        <br>
+        <button id="leaveCanal" align = "right">Leave canal</button>
+
+        <div id="chat">    <!-- Built by JS --> </div>
+    </div>
+
+    <div id ="chatbot" style = "display: none;" >
+        <table align="centre">
+            <tr><td><button id="time" align = "left">What time is it?</button></td></tr>
+            <tr><td><button id="weekday" align = "left">What day of the week it is?</button></td></tr>
+            <tr><td><button id="weather" align = "left">What is the weather like?</button></td></tr>
+            <tr><td><button id="leaveChatbot" align = "left">Leave canal</button></td></tr>
+
+        </table>
+        <br><br>
+        <table width = "500">
+            <tr><td><div id = "responseTime" align = "centre" style = "display: none;"></div></td></tr>
+            <tr><td><div id = "responseWeekday" align = "centre" style = "display: none;"></div></td></tr>
+            <tr><td><div id = "responseWeather" align = "centre" style = "display: none;"></div></td></tr>
+        </table>
+
+    </div>
+
+    <script src="websocketDemo.js"></script>
+</body>
+</html>
